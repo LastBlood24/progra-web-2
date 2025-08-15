@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo del Zapato</title>
@@ -9,7 +8,11 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            background-color: #f4f4f4; /* Color de fondo claro para contraste */
+            background-image: url('imagenes Z/puma-logo-cover.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed; /* Opcional: para un efecto de paralaje */
         }
         .header-menu {
             background-color: #333;
@@ -65,6 +68,17 @@
         .dropdown-content a:hover {
             background-color: #666;
         }
+        .main-content {
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+        .main-content img {
+            max-width: 500px;
+            height: auto;
+            margin-top: 20px;
+            border: 3px solid #000;
+        }
     </style>
 </head>
 <body>
@@ -88,9 +102,10 @@
         </nav>
     </header>
 
-    <div style="padding: 20px;">
-        <h2>Contenido de la página</h2>
-        <p>Este es un espacio para el contenido principal de tu sitio web. El menú de arriba es el que se ha creado.</p>
+    <div class="main-content">
+        <h2>La Bandera de México</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg" alt="Bandera de México">
+        <p>La bandera nacional de México es uno de los tres símbolos patrios del país, junto con el escudo y el himno nacional. El diseño actual fue adoptado el 16 de septiembre de 1968.</p>
     </div>
 
 </body>
