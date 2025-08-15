@@ -1,5 +1,5 @@
 body {
-    background-image: url('tu-imagen-de-fondo.jpg');
+    background-image: url('imagenes Z/puma-logo-cover.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
