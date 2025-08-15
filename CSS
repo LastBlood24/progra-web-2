@@ -1,7 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4; /* Color de fondo claro para contraste */
+    background-image: url('tu-imagen-de-fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* Opcional: para un efecto de paralaje */
 }
 .header-menu {
     background-color: #333;
