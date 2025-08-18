@@ -208,7 +208,7 @@
             max-height: 0;
         }
         .info-container.show {
-            max-height: 2000px;
+            max-height: 4000px; /* Ajustado para el nuevo contenido */
         }
         .info-container img {
             max-width: 100%;
@@ -218,10 +218,25 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .info-grid {
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr;
             gap: 2rem;
             margin-top: 2rem;
+        }
+        .info-grid h3 {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+        .info-grid .content-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .info-grid .content-item img {
+            max-width: 400px;
+            height: auto;
+            flex-shrink: 0;
         }
     </style>
 </head>
@@ -264,17 +279,57 @@
                     <p>Nos dedicamos a ser el referente de la moda y la calidad en la industria del calzado, asegurando que cada cliente encuentre el par perfecto que combine estilo y confort.</p>
                 </div>
             </div>
+            
+            <hr style="margin: 2rem 0; border: 1px solid #ddd;">
+
             <div class="card">
-                <h3>EL BUEN ZAPATO</h3>
-                <div class="info-grid">
-                    <img src="image_614545.jpg" alt="Proceso de fabricación de zapatos" style="width: 100%; border-radius: 8px;">
-                    <p>La horma de un zapato de fabricación industrial sólo puede elaborarse a partir de unos valores medios que suelen dar muy buenos resultado. Por ejemplo, en Church's existen hasta seis anchuras distintas para cada modelo. La mayoría de los hombres encuentran lo que necesitan.</p>
-                    <p>En los zapatos de fabricación industrial las plantillas se cortan a la medida adecuada con ayuda de una máquina para minimizar la pérdida del material. Los zapateros a medida cortan las suelas una a una.</p>
-                    <p>Dos plantillas con pestañas del hendido grabadas y dobladas hacia arriba. En Church's se puede optar en la fabricación industrial por esta alternativa de pestaña del hendido pegada.</p>
-                    <p>Mientras se preparan las plantillas y las pestañas del hendido los cortadores cortan las partes de la pala, para ello es necesario los patrones para cada una de las partes de ésta.</p>
-                    <p>Los closers cosen las partes de la pala, con pespuntes y tachones, en parte a mano, y unen la pala con el forro. En los zapatos de calidad el forro es de piel de cabra o tela.</p>
+                <h3>LA TOMA DE LAS MEDIDAS</h3>
+                <div class="content-item">
+                    <img src="image_613249.png" alt="Toma de medidas del pie">
+                    <div>
+                        <p>No existen dos pies que sean exactamente iguales. Por este motivo, a un zapatero solamente le es posible confeccionar zapatos cómodos de las medidas correspondientes cuando dispone de toda la información necesario sobre los dos pies del cliente.</p>
+                        <p>En la confección de un traje a medida, el sastre recomienda por lo menos dos o tres pruebas, mientras que el zapatero se las arregla con sólo una gracias al denominado zapato de prueba. Para ello es absolutamente necesario destinar suficiente tiempo a la toma de medidas, a ser posible de una a dos horas.</p>
+                        <p>Es muy frecuente que resulte difícil encontrar el momento en que puede conseguirse el resultado más preciso.</p>
+                    </div>
                 </div>
             </div>
+
+            <hr style="margin: 2rem 0; border: 1px solid #ddd;">
+
+            <div class="card">
+                <h3>NUMERACIÓN</h3>
+                <div class="content-item">
+                    <img src="image_61b10f.jpg" alt="Tabla de numeración de calzado">
+                    <div>
+                        <p>La numeración métrica permite medir tanto la longitud del pie como de un zapato y cuenta con una escala similar. En la práctica no se ha impuesto para la numeración del calzado.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin: 2rem 0; border: 1px solid #ddd;">
+            
+            <div class="card">
+                <h3>LIMPIEZA DEL ZAPATO</h3>
+                <div class="content-item">
+                    <img src="https://i.imgur.com/vH9j2mD.png" alt="Limpieza del zapato">
+                    <div>
+                        <p>La pala de un zapato sólo podrá conservar su suavidad, elasticidad y brillo si recibe los cuidados adecuados. La piel del calzado mal cuidado acaba secándose, quebrándose (principalmente en los lugares donde se flexiona) y resquebrajándose tarde o temprano. Los zapatos mal cuidados tienen una vida relativamente corta.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin: 2rem 0; border: 1px solid #ddd;">
+            
+            <div class="card">
+                <h3>COMO SE HACE EL ZAPATO</h3>
+                <div class="content-item">
+                    <img src="https://i.imgur.com/WnC83rS.png" alt="Proceso de fabricación de zapato">
+                    <div>
+                        <p>La horma de un zapato de fabricación industrial sólo puede elaborarse a partir de unos valores medios que suelen dar muy buenos resultado. Por ejemplo, en Church's existen hasta seis anchuras distintas para cada modelo. La mayoría de los hombres encuentran lo que necesitan.</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </section>
 
