@@ -83,7 +83,7 @@
             max-width: 1200px;
             margin: auto;
             padding: 3rem 1.5rem;
-            position: relative; /* Necesario para el overlay */
+            position: relative;
             z-index: 1;
         }
         .section-title {
@@ -109,10 +109,10 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             position: relative;
-            z-index: 2; /* Asegura que las tarjetas estén sobre el overlay */
+            z-index: 2;
         }
         .card {
-            background-color: white; /* Fondo blanco para las tarjetas */
+            background-color: white;
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -129,10 +129,9 @@
             background-image: url('imagenes Z/imagenes-de-la-bandera-de-mexico.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Efecto de paralaje */
-            padding: 5rem 0; /* Mayor padding para que se aprecie el fondo */
+            background-attachment: fixed;
+            padding: 5rem 0;
         }
-        /* Overlay para oscurecer la imagen y mejorar la legibilidad */
         #nosotros::before {
             content: '';
             position: absolute;
@@ -140,7 +139,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(255, 255, 255, 0.7); /* Capa semi-transparente para el texto */
+            background-color: rgba(255, 255, 255, 0.7);
             z-index: 0;
         }
 
@@ -200,16 +199,16 @@
             transition: background-color 0.3s ease;
         }
         .toggle-btn:hover {
-            background-color: #003366; /* Un tono más oscuro */
+            background-color: #003366;
         }
         .info-container {
-            display: none; /* Oculta el contenido por defecto */
+            display: none;
             overflow: hidden;
             transition: max-height 0.5s ease-in-out;
-            max-height: 0; /* Para la transición */
+            max-height: 0;
         }
         .info-container.show {
-            max-height: 1000px; /* Un valor lo suficientemente grande */
+            max-height: 2000px;
         }
         .info-container img {
             max-width: 100%;
@@ -252,12 +251,24 @@
                     <p>Somos una Empresa 100% Mexicana que te ofrece una excelente opción a ti, y para tu estilo personal!</p>
                     <p><strong>FAZ</strong> con 29 años de experiencia en el ramo del Calzado, es la Empresa que Ideó, Desarrolló y es Líder en la Venta de Calzado por Catálogo.</p>
                     <p><strong>FAZ</strong> cuenta con un gran prestigio respaldado por Productos de Moda, Calidad y Precio Accesible, que solo es posible lograr gracias a sus investigaciones a nivel Internacional y su Alta Tecnología de Fabricación, que utiliza materiales de alta calidad, para ofrecer mayor durabilidad y confort.</p>
-                    <img src="imagenes Z/faz.png" alt="Logo de FAZ">
+                    <img src="https://i.imgur.com/k9mD5Jz.png" alt="Logo de FAZ">
                 </div>
                 <div class="card">
                     <h3>NUESTRA MISION</h3>
                     <p>Es ofrecer calzado a todo el público una opción moderna y cómoda para su calzado de acuerdo a las normas de calidad actuales de nuestro país.</p>
                     <p>Nos dedicamos a ser el referente de la moda y la calidad en la industria del calzado, asegurando que cada cliente encuentre el par perfecto que combine estilo y confort.</p>
+                </div>
+            </div>
+            
+            <hr style="margin: 2rem 0; border: 1px solid #ddd;">
+
+            <div class="card">
+                <h3>LA TOMA DE LAS MEDIDAS</h3>
+                <p>No existen dos pies que sean exactamente iguales. Por este motivo, a un zapatero solamente le es posible confeccionar zapatos cómodos de las medidas correspondientes cuando dispone de toda la información necesario sobre los dos pies del cliente.</p>
+                <p>Para garantizar el calzado más cómodo y adecuado, se deben tomar en cuenta las siguientes mediciones: longitud del pie, ancho, y la altura del arco. Estas medidas son cruciales para un ajuste perfecto, ya que incluso pequeñas diferencias entre ambos pies pueden afectar la comodidad a largo plazo.</p>
+                <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <img src="https://i.imgur.com/T0bS4j5.png" alt="Toma de medidas del pie 1" style="max-width: 48%;">
+                    <img src="https://i.imgur.com/f7jYyqj.png" alt="Toma de medidas del pie 2" style="max-width: 48%;">
                 </div>
             </div>
         </div>
