@@ -178,6 +178,27 @@
             color: var(--primary-color);
         }
 
+        /* Sección de Contacto */
+        #contacto .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        #contacto .branch {
+            flex-basis: 300px; /* Ajusta el ancho base de las tarjetas de sucursal */
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        #contacto .branch h4 {
+            font-family: var(--font-accent);
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
         /* Pie de Página */
         .footer {
             background-color: var(--dark-color);
@@ -278,6 +299,24 @@
         </div>
     </section>
     
+    <section id="contacto" class="container">
+        <h2 class="section-title">Contáctanos</h2>
+        <div class="contact-info">
+            <div class="branch">
+                <h4>Sucursal R32</h4>
+                <p>Av. del Rosario No.32<br>Col. San Martín Xochinahuac<br>C.P. 02210<br>Azcapotzalco<br>México, D.F.<br>Tel. (55) 57-29-26-00</p>
+            </div>
+            <div class="branch">
+                <h4>Sucursal Iztapalapa</h4>
+                <p>Av. Tlahuac No.74<br>Col. Santa Isabel Industrial<br>C.P. 09820<br>Iztapalapa<br>México, D.F.<br>Tel. (55) 55-81-95-45, 55-81-95-46</p>
+            </div>
+            <div class="branch">
+                <h4>Sucursal 5 de Febrero</h4>
+                <p>5 de Febrero No.35-B<br>Col. Centro<br>C.P. 06080<br>Cuauhtémoc<br>México, D.F.<br>Tel. (55) 55-12-86-63</p>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <p>&copy; 2024 Mundo del Zapato. Todos los derechos reservados.</p>
     </footer>
